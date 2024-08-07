@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <div class="button-container">
+        <input type="num" id="inputvalue"/>
+        <div>
+            <button onclick="clearval()">AC</button>
+            <button type="button" value="<-" onclick="backspace()"><-</button>
+            <button type="button" onclick="getnum('%')">%</button>
+            <button type="button" onclick="getnum('/')">/</button>
+        </div>
+        <div>
+            <button type="button" onclick="getnum('7')">7</button>
+            <button type="button" onclick="getnum('8')">8</button>
+            <button type="button" onclick="getnum('9')">9</button>
+            <button type="button" onclick="getnum('*')">*</button>
+        </div>
+        <div>
+            <button type="button" onclick="getnum('4')">4</button>
+            <button type="button" onclick="getnum('5')">5</button>
+            <button type="button" onclick="getnum('6')">6</button>
+            <button type="button" onclick="getnum('-')">-</button>
+        </div>
+        <div>
+            <button type="button" onclick="getnum('1')">1</button>
+            <button type="button" onclick="getnum('2')">2</button>
+            <button type="button" onclick="getnum('3')">3</button>
+            <button type="button" onclick="getnum('+')">+</button>
+        </div>
+        <div>
+            <button type="button"  onclick="getnum('00')">00</button>
+            <button type="button"  onclick="getnum('0')">0</button>
+            <button type="button"  onclick="getnum('.')">.</button>
+            <button type="button"  onclick="solve()">=</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
